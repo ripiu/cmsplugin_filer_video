@@ -5,7 +5,7 @@ from ripiu.cmsplugin_filer_video import __version__
 setup(
     name='ripiu.cmsplugin_filer_video',
     version=__version__,
-    url='https://github.com/ripiu/ripiu.cmsplugin_filer_video',
+    url='https://github.com/ripiu/cmsplugin_filer_video',
     license='BSD-new',
     description='Self hosted videos',
     long_description=open('README.rst').read(),
