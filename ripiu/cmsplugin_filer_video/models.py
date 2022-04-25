@@ -18,6 +18,7 @@ class FilerVideoPluginModel(CMSPlugin):
     )
 
     video_file = FilerFileField(
+        on_delete=models.CASCADE,
         blank=False, null=False,
         verbose_name=_('Video file'),
         related_name='+'
@@ -59,6 +60,7 @@ class FilerVideoPluginModel(CMSPlugin):
     )
 
     poster = FilerImageField(
+        on_delete=models.SET_NULL,
         blank=True, null=True,
         verbose_name=_('poster image'),
         help_text=_('An image to show while no video data is available'),
